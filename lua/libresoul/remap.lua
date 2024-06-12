@@ -1,5 +1,9 @@
 vim.g.mapleader = " "
-vim.keymap.set("n", "<leader>pe", vim.cmd.Ex)
+vim.keymap.set("n", "<leader>pe", function ()
+    vim.cmd("Ex")
+    vim.cmd("set number")
+    vim.cmd("set relativenumber")
+end)
 vim.keymap.set("n", "<leader>t", vim.cmd.tabnew)
 vim.keymap.set("n", "<C-h>", vim.cmd.tabprevious)
 vim.keymap.set("n", "<C-l>", vim.cmd.tabnext)
