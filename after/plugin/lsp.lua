@@ -38,3 +38,7 @@ require("lspconfig").cssls.setup {
 	on_attach = on_attach,
 	capabilities = capabilities,
 }
+require("lspconfig").tailwindcss.setup {
+	on_attach = on_attach,
+	capabilities = capabilities,
+}
