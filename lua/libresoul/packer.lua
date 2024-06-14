@@ -28,6 +28,11 @@ return require('packer').startup(function(use)
 		requires = { 'nvim-tree/nvim-web-devicons', opt = true }
 	}
 
+    use {
+        'prettier/vim-prettier',
+        run = 'yarn install --frozen-lockfile --production'
+    }
+
 	use 'hrsh7th/nvim-cmp'
 	use 'hrsh7th/cmp-nvim-lsp'
 	use 'L3MON4D3/LuaSnip'
