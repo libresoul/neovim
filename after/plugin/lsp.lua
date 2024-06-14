@@ -30,3 +30,7 @@ require("lspconfig").tsserver.setup {
 	on_attach = on_attach,
 	capabilities = capabilities,
 }
+require("lspconfig").html.setup {
+	on_attach = on_attach,
+	capabilities = capabilities,
+}
