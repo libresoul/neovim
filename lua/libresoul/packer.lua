@@ -13,7 +13,7 @@ return require('packer').startup(function(use)
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
 
-	use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+    use {'nvim-treesitter/nvim-treesitter', tag = '0.9.2', {run = ':TSUpdate'}}
 
 	use { 'kartikp10/noctis.nvim', requires = { 'rktjmp/lush.nvim' } }
 
