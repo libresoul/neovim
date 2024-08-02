@@ -50,4 +50,5 @@ return require('packer').startup(function(use)
     use 'rafamadriz/friendly-snippets'
 	use '907th/vim-auto-save'
 	use 'lambdalisue/suda.vim'
+	use "github/copilot.vim"
 end)
