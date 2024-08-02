@@ -54,3 +54,7 @@ vim.keymap.set('i', '<A-l>', '<Plug>(copilot-accept-word)')
 vim.keymap.set('i', '<A-]>', '<Plug>(copilot-next)')
 vim.keymap.set('i', '<A-[>', '<Plug>(copilot-previous)')
 vim.keymap.set('i', '<A-k>', '<Plug>(copilot-dismiss)')
+
+-- Move lines
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
