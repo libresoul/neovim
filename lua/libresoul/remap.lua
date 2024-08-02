@@ -42,3 +42,15 @@ vim.keymap.set("i", "[", "[]<Esc>ha")
 vim.keymap.set("i", '"', "\"\"<Esc>ha")
 vim.keymap.set("i", "'", "''<Esc>ha")
 vim.keymap.set("i", "`", "``<Esc>ha")
+
+-- Copilot
+vim.keymap.set('i', '<A-j>', 'copilot#Accept("\\<CR>")', {
+    expr = true,
+    replace_keycodes = false
+})
+vim.g.copilot_no_tab_map = true
+vim.keymap.set('i', '<A-J>', '<Plug>(copilot-accept-line)')
+vim.keymap.set('i', '<A-l>', '<Plug>(copilot-accept-word)')
+vim.keymap.set('i', '<A-]>', '<Plug>(copilot-next)')
+vim.keymap.set('i', '<A-[>', '<Plug>(copilot-previous)')
+vim.keymap.set('i', '<A-k>', '<Plug>(copilot-dismiss)')
