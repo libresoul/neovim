@@ -9,3 +9,4 @@ vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 vim.opt.showmode = false
 vim.opt.guicursor = "n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50"
+vim.g.copilot_enabled = 0
