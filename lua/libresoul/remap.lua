@@ -66,3 +66,7 @@ vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 -- Half page jumping in the middle
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
+
+-- Search terms in the middle
+vim.keymap.set("n", "n", "nzzzv")
+vim.keymap.set("n", "N", "Nzzzv")
