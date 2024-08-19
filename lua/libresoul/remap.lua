@@ -38,6 +38,7 @@ vim.keymap.set("i", "[", "[]<Esc>ha")
 vim.keymap.set("i", '"', "\"\"<Esc>ha")
 vim.keymap.set("i", "'", "''<Esc>ha")
 vim.keymap.set("i", "`", "``<Esc>ha")
+vim.keymap.set("i", "<", "<><Esc>ha")
 
 -- Copilot
 vim.keymap.set('i', '<A-j>', 'copilot#Accept("\\<CR>")', {
