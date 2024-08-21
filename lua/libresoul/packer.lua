@@ -43,6 +43,14 @@ return require('packer').startup(function(use)
         end
     }
 
+    use {
+        "windwp/nvim-autopairs",
+        event = "InsertEnter",
+        config = function()
+            require("nvim-autopairs").setup {}
+        end
+    }
+
 	use 'hrsh7th/nvim-cmp'
 	use 'hrsh7th/cmp-nvim-lsp'
 	use 'L3MON4D3/LuaSnip'
