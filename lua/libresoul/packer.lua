@@ -59,4 +59,5 @@ return require('packer').startup(function(use)
 	use '907th/vim-auto-save'
 	use 'lambdalisue/suda.vim'
 	use "github/copilot.vim"
+	use "reisub0/hot-reload.vim"
 end)
