@@ -3,6 +3,8 @@ require("mason-lspconfig").setup({
 	ensure_installed = { "lua_ls", "pylsp" }
 })
 
+local lsp_config = require("lspconfig")
+
 local on_attach = function(_, _)
 	vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, {})
 	vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, {})
@@ -14,35 +16,35 @@ end
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-require("lspconfig").lua_ls.setup {
+lsp_config.lua_ls.setup {
 	on_attach = on_attach,
 	capabilities = capabilities,
 }
-require("lspconfig").pylsp.setup {
+lsp_config.pylsp.setup {
 	on_attach = on_attach,
 	capabilities = capabilities,
 }
-require("lspconfig").clangd.setup {
+lsp_config.clangd.setup {
 	on_attach = on_attach,
 	capabilities = capabilities,
 }
-require("lspconfig").tsserver.setup {
+lsp_config.tsserver.setup {
 	on_attach = on_attach,
 	capabilities = capabilities,
 }
-require("lspconfig").html.setup {
+lsp_config.html.setup {
 	on_attach = on_attach,
 	capabilities = capabilities,
 }
-require("lspconfig").cssls.setup {
+lsp_config.cssls.setup {
 	on_attach = on_attach,
 	capabilities = capabilities,
 }
-require("lspconfig").tailwindcss.setup {
+lsp_config.tailwindcss.setup {
 	on_attach = on_attach,
 	capabilities = capabilities,
 }
-require("lspconfig").bashls.setup {
+lsp_config.bashls.setup {
 	on_attach = on_attach,
 	capabilities = capabilities,
 }
