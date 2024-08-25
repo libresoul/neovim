@@ -48,3 +48,7 @@ lsp_config.bashls.setup {
 	on_attach = on_attach,
 	capabilities = capabilities,
 }
+lsp_config["dartls"].setup({
+	on_attach = on_attach,
+	capabilities = capabilities,
+})
