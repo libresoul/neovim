@@ -59,3 +59,10 @@ lsp_config["intelephense"].setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
 })
+lsp_config["jdtls"].setup({
+    root_dir = function (fname)
+        return vim.fn.getcwd()
+    end,
+	on_attach = on_attach,
+	capabilities = capabilities,
+})
