@@ -11,3 +11,6 @@ vim.opt.showmode = false
 vim.opt.guicursor = "n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50"
 vim.g.copilot_enabled = 0
 vim.g.netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
+-- Search settings
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
