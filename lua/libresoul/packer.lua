@@ -40,14 +40,16 @@ return require('packer').startup(function(use)
         end
     }
 
+
+    use 'nvim-telescope/telescope-ui-select.nvim'
     use 'derektata/lorem.nvim'
-	use 'hrsh7th/nvim-cmp'
-	use 'hrsh7th/cmp-nvim-lsp'
-	use 'L3MON4D3/LuaSnip'
+    use 'hrsh7th/nvim-cmp'
+    use 'hrsh7th/cmp-nvim-lsp'
+    use 'L3MON4D3/LuaSnip'
     use 'saadparwaiz1/cmp_luasnip'
     use 'rafamadriz/friendly-snippets'
-	use '907th/vim-auto-save'
-	use 'lambdalisue/suda.vim'
-	use "github/copilot.vim"
-	use "reisub0/hot-reload.vim"
+    use '907th/vim-auto-save'
+    use 'lambdalisue/suda.vim'
+    use "github/copilot.vim"
+    use "reisub0/hot-reload.vim"
 end)
