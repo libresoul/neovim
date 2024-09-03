@@ -42,7 +42,6 @@ return require('packer').startup(function(use)
 
 
     use 'nvim-telescope/telescope-ui-select.nvim'
-    use 'derektata/lorem.nvim'
     use 'hrsh7th/nvim-cmp'
     use 'hrsh7th/cmp-nvim-lsp'
     use 'L3MON4D3/LuaSnip'
