@@ -14,3 +14,5 @@ vim.g.netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
 -- Search settings
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
+-- Scrolloff 8 lines
+vim.opt.scrolloff = 8
