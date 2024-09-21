@@ -50,6 +50,11 @@ return require('packer').startup(function(use)
         "github/copilot.vim",
         event = "InsertEnter"
     }
+
+    use {
+         "rafamadriz/friendly-snippets",
+          event = "InsertEnter"
+    }
     use {"lambdalisue/suda.vim", opt = true}
 
     use 'nvim-telescope/telescope-ui-select.nvim'
@@ -57,6 +62,5 @@ return require('packer').startup(function(use)
     use 'hrsh7th/cmp-nvim-lsp'
     use 'L3MON4D3/LuaSnip'
     use 'saadparwaiz1/cmp_luasnip'
-    use 'rafamadriz/friendly-snippets'
     use '907th/vim-auto-save'
 end)
