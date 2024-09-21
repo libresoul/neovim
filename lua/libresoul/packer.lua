@@ -41,6 +41,10 @@ return require('packer').startup(function(use)
         end
     }
 
+    use {
+        "reisub0/hot-reload.vim",
+        ft = 'dart'
+    }
     use {"lambdalisue/suda.vim", opt = true}
 
     use 'nvim-telescope/telescope-ui-select.nvim'
@@ -51,5 +55,4 @@ return require('packer').startup(function(use)
     use 'rafamadriz/friendly-snippets'
     use '907th/vim-auto-save'
     use "github/copilot.vim"
-    use "reisub0/hot-reload.vim"
 end)
