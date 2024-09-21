@@ -40,6 +40,8 @@ vim.keymap.set("v", "<leader>y", "\"+y")
 -- vim.keymap.set("i", "`", "``<Esc>ha")
 -- vim.keymap.set("i", "<", "<><Esc>ha")
 
+-- Auto save toggle
+vim.keymap.set("n", "<A-s>", vim.cmd.AutoSaveToggle)
 -- Copilot
 vim.keymap.set('i', '<A-j>', 'copilot#Accept("\\<CR>")', {
     expr = true,
