@@ -29,7 +29,8 @@ return require('packer').startup(function(use)
 
     use {
         'prettier/vim-prettier',
-        run = 'yarn install --frozen-lockfile --production'
+        run = 'yarn install --frozen-lockfile --production',
+        ft = {'html', 'css', 'javascript', 'markdown'}
     }
 
     use {
