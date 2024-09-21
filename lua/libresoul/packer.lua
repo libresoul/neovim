@@ -45,6 +45,11 @@ return require('packer').startup(function(use)
         "reisub0/hot-reload.vim",
         ft = 'dart'
     }
+
+    use {
+        "github/copilot.vim",
+        event = "InsertEnter"
+    }
     use {"lambdalisue/suda.vim", opt = true}
 
     use 'nvim-telescope/telescope-ui-select.nvim'
@@ -54,5 +59,4 @@ return require('packer').startup(function(use)
     use 'saadparwaiz1/cmp_luasnip'
     use 'rafamadriz/friendly-snippets'
     use '907th/vim-auto-save'
-    use "github/copilot.vim"
 end)
